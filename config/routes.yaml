@@ -1,3 +1,10 @@
 controllers:
     resource: ../src/Controller/
     type: attribute
+
+client_yaml:
+    path:       /client/prenom/yaml/{nom}
+    controller: App\Controller\ClientController::info
+    methods:    GET|HEAD
+    requirements:
+        nom: ^[A-Za-z]+(?:-?[A-Za-z]+)+$
