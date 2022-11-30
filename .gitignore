@@ -1,0 +1,5 @@
+var/
+vendor/
+.idea/
+.env.local
+/var/
